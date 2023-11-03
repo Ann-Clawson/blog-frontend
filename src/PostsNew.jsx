@@ -1,7 +1,9 @@
 export function PostsNew() {
   return (
     <div id="posts-new">
-      <h1 className="posts">New post</h1>
+      <h1 id="new-post" className="posts">
+        New post
+      </h1>
       <div>
         <form action="">
           <div>
