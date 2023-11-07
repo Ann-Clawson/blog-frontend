@@ -11,6 +11,7 @@ export function PostsIndex(props) {
             <h2>{post.title}</h2>
             <p>{post.body}</p>
             <img src={post.image} alt="pizza or cats" />
+            <button type="submit">Learn More</button>
           </div>
         ))}
       </div>
