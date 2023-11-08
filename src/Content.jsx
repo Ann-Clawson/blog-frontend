@@ -3,6 +3,7 @@ import { PostsNew } from "./PostsNew";
 import { Modal } from "./Modal";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { PostsShow } from "./PostsShow";
 
 export function Content() {
   const [posts, setPosts] = useState([]);
@@ -35,8 +36,7 @@ export function Content() {
       {/* <button onClick={handleIndexPosts}>POSTS</button> */}
       <PostsIndex posts={posts} onShowPost={handleShowPost} />
       <Modal show={isPostsShowVisible} onClose={handleClose}>
-        <h2>Title: {currentPost.title}</h2>
-        <p>Title: {currentPost.body}</p>
+        <PostsShow post={currentPost} />
       </Modal>
     </div>
   );
