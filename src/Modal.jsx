@@ -13,7 +13,7 @@ export function Modal(props) {
       //   </section>
       // </div>
 
-      //bootstrap
+      //bootstrap static
       <div
         className="modal fade"
         id="staticBackdrop"
