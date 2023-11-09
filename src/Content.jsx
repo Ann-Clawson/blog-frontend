@@ -4,6 +4,7 @@ import { Modal } from "./Modal";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { PostsShow } from "./PostsShow";
+import { AllPosts } from "./AllPosts";
 
 export function Content() {
   //storing the data
@@ -39,6 +40,7 @@ export function Content() {
     <div className="container">
       <PostsNew />
       {/* <button onClick={handleIndexPosts}>POSTS</button> */}
+      <AllPosts />
       <PostsIndex posts={posts} onShowPost={handleShowPost} />
       <Modal show={isPostsShowVisible} onClose={handleClose}>
         <PostsShow post={currentPost} />
