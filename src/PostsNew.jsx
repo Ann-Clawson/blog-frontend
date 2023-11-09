@@ -4,7 +4,18 @@ export function PostsNew() {
   const handleSubmit = (event) => {
     event.preventDefault();
     // console.log("handle submit");
+    const params = new FormData(event.target);
+    axios
+      .post("http://localhost:3000/posts.json", params)
+      .then((response) => {
+        console.log(response.data);
+        event.target.reset();
+      })
+      .catch((error) => {
+        console.log(error.response.data.errors);
+      });
   };
+
   return (
     <div id="posts-new">
       <h1 id="new-post" className="posts">

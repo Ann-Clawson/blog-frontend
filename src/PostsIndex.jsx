@@ -30,15 +30,25 @@ export function PostsIndex(props) {
               <div className="card-body">
                 <h5 className="card-title">{post.title}</h5>
                 <p className="card-text">{post.body}</p>
-                <button type="button" className="btn btn-outline-info" onClick={() => props.onShowPost(post)}>
+                <button
+                  type="button"
+                  className="btn btn-outline-info"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                  onClick={() => props.onShowPost(post)}
+                >
                   Read On
                 </button>
               </div>
             </div>
           </div>
         ))}
-        {/* </div> */}
       </div>
+      <a href="#">
+        <button id="bottom-button" type="button" className="btn btn-outline-info">
+          Back To Top
+        </button>
+      </a>
     </div>
   );
 }
