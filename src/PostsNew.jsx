@@ -15,10 +15,12 @@ export function PostsNew() {
           </div>
           <br />
           <div>
-            Image: <input type="url" name="" id="" />
+            Image Address: <input type="url" name="" id="" />
           </div>
           <br />
-          <button type="submit">Submit Post</button>
+          <button type="button" className="btn btn-outline-info" type="submit">
+            Submit Post
+          </button>
         </form>
       </div>
     </div>

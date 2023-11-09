@@ -36,7 +36,7 @@ export function Content() {
   useEffect(handleIndexPosts, []);
 
   return (
-    <div>
+    <div className="container">
       <PostsNew />
       {/* <button onClick={handleIndexPosts}>POSTS</button> */}
       <PostsIndex posts={posts} onShowPost={handleShowPost} />
