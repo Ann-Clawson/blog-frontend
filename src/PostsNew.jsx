@@ -55,7 +55,7 @@ export function PostsNew() {
             <label htmlFor="exampleInputPassword1" className="form-label">
               Body
             </label>
-            <input type="text" className="form-control" id="exampleInputPassword1" required />
+            <textarea type="text" className="form-control" id="exampleInputPassword1" required />
           </div>
           <div className="mb-3">
             <label htmlFor="exampleInputPassword1" className="form-label">
