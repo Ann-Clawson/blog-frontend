@@ -19,10 +19,10 @@ export function PostsNew() {
   return (
     <div id="posts-new">
       <h1 id="new-post" className="posts">
-        New post
+        Create A New Post
       </h1>
       <div>
-        <form onSubmit={handleSubmit}>
+        {/* <form onSubmit={handleSubmit}>
           <div>
             Title: <input type="text" name="title" id="" />
           </div>
@@ -37,6 +37,40 @@ export function PostsNew() {
           <br />
           <button type="submit" className="btn btn-outline-info">
             Submit Post
+          </button>
+        </form>  */}
+
+        {/* bootstrap */}
+        <form>
+          <div className="mb-3">
+            <label htmlFor="exampleInputEmail1" className="form-label">
+              Title
+            </label>
+            <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required />
+            {/* <div id="emailHelp" className="form-text">
+              We&apos;ll never share your email with anyone else.
+            </div> */}
+          </div>
+          <div className="mb-3">
+            <label htmlFor="exampleInputPassword1" className="form-label">
+              Body
+            </label>
+            <input type="text" className="form-control" id="exampleInputPassword1" required />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="exampleInputPassword1" className="form-label">
+              Image
+            </label>
+            <input type="url" className="form-control" id="exampleInputPassword1" required />
+          </div>
+          <div className="mb-3 form-check">
+            <input type="checkbox" className="form-check-input" id="exampleCheck1" required />
+            <label className="form-check-label" htmlFor="exampleCheck1">
+              Check this box
+            </label>
+          </div>
+          <button type="submit" className="btn btn-outline-info">
+            Submit
           </button>
         </form>
       </div>
