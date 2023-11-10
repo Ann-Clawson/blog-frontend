@@ -68,3 +68,7 @@ header {
 body {
   font-family: 'Nunito Sans', sans-serif !important;
 }
+
+#new-post {
+  font-weight: 700;
+}

@@ -34,6 +34,12 @@ export function Content() {
     setIsPostsShowVisible(false);
   };
 
+  const handleCreatePost = (params) => {
+    axios.post("http://localhost:3000/posts.json", params).then((response) => {
+      setRecipes([...recipes, response.data]);
+    });
+  };
+
   useEffect(handleIndexPosts, []);
 
   return (

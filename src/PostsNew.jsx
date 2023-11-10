@@ -5,10 +5,7 @@ export function PostsNew() {
     event.preventDefault();
     // console.log("handle submit");
     const params = new FormData(event.target);
-    axios
-      .post("http://localhost:3000/posts.json", params)
-      .then((response) => {
-        console.log(response.data);
+    
         event.target.reset();
       })
       .catch((error) => {
