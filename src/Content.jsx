@@ -36,7 +36,7 @@ export function Content() {
 
   const handleCreatePost = (params) => {
     axios.post("http://localhost:3000/posts.json", params).then((response) => {
-      setRecipes([...recipes, response.data]);
+      setPosts([...posts, response.data]);
     });
   };
 
@@ -44,8 +44,7 @@ export function Content() {
 
   return (
     <div className="container">
-      <PostsNew />
-      {/* <button onClick={handleIndexPosts}>POSTS</button> */}
+      <PostsNew onCreatePost={handleCreatePost} />
       <AllPosts />
       <PostsIndex posts={posts} onShowPost={handleShowPost} />
       <Modal show={isPostsShowVisible} onClose={handleClose}>
