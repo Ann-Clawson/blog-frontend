@@ -72,3 +72,7 @@ body {
 #new-post {
   font-weight: 700;
 }
+
+#save-changes{
+  margin-left: 338px !important;
+}

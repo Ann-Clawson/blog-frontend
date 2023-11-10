@@ -37,7 +37,7 @@ export function PostsIndex(props) {
                     data-bs-target="#staticBackdrop"
                     onClick={() => props.onShowPost(post)}
                   >
-                    Read On
+                    Edit Post
                   </button>
                 </div>
               </div>

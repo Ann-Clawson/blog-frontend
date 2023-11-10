@@ -12,8 +12,8 @@ export function PostsShow(props) {
 
   return (
     <div id="posts-show">
-      <h2>{props.post.title}</h2>
-      <p>{props.post.body}</p>
+      {/* <h2>{props.post.title}</h2>
+      <p>{props.post.body}</p> */}
       <h2>Edit Post</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
@@ -53,9 +53,11 @@ export function PostsShow(props) {
           </label>
           <input defaultValue={props.post.image} name="image" type="url" className="form-control" id="" required />
         </div>
-        <button type="submit" className="btn btn-light btn-outline-dark">
-          Save Changes
-        </button>
+        <div>
+          <button type="submit" className="btn btn-light btn-outline-dark" id="save-changes">
+            Save Changes
+          </button>
+        </div>
       </form>
     </div>
   );

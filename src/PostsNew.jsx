@@ -62,12 +62,12 @@ export function PostsNew(props) {
             </label>
             <input name="image" type="url" className="form-control" id="" required />
           </div>
-          <div className="mb-3 form-check">
+          {/* <div className="mb-3 form-check">
             <input type="checkbox" className="form-check-input" id="exampleCheck1" required />
             <label className="form-check-label" htmlFor="exampleCheck1">
               Check this box
             </label>
-          </div>
+          </div> */}
           <button type="submit" className="btn btn-light btn-outline-dark">
             Submit
           </button>
