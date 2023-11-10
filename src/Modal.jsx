@@ -31,14 +31,14 @@ export function Modal(props) {
             </div>
             <div className="modal-body">{props.children}</div>
             <div className="modal-footer">
-              <button
+              {/* <button
                 type="button"
                 className="btn btn-light btn-outline-dark"
                 data-bs-dismiss="modal"
                 onClick={props.onClose}
               >
                 Close
-              </button>
+              </button> */}
               {/* <button type="button" className="btn btn-primary">
                 Understood
               </button> */}

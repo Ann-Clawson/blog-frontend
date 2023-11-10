@@ -56,6 +56,13 @@ export function Content() {
     });
   };
 
+  const handleDestroyPost = (post) => {
+    axios.delete(`http://localhost:3000/posts/${post.id}.json`).then((response) => {
+      setPosts(posts.filter((p) => p.id !== post.id));
+      handleClose();
+    });
+  };
+
   useEffect(handleIndexPosts, []);
 
   return (
@@ -64,7 +71,7 @@ export function Content() {
       <AllPosts />
       <PostsIndex posts={posts} onShowPost={handleShowPost} />
       <Modal show={isPostsShowVisible} onClose={handleClose}>
-        <PostsShow onUpdatePost={handleUpdatePost} post={currentPost} />
+        <PostsShow onUpdatePost={handleUpdatePost} post={currentPost} onDestroyPost={handleDestroyPost} />
       </Modal>
     </div>
   );
