@@ -14,7 +14,8 @@ export function Content() {
   const handleIndexPosts = () => {
     axios.get("http://localhost:3000/posts.json").then((response) => {
       // console.log(response.data);
-      setPosts(response.data);
+      let data = response.data;
+      setPosts(data.reverse());
     });
   };
 
@@ -36,7 +37,7 @@ export function Content() {
 
   const handleCreatePost = (params) => {
     axios.post("http://localhost:3000/posts.json", params).then((response) => {
-      setPosts([...posts, response.data]);
+      setPosts([response.data, ...posts]);
     });
   };
 
