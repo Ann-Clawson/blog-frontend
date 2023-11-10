@@ -13,12 +13,12 @@ html {
   font-family: 'Permanent Marker', cursive;
 }*/
 
-/* body {
-  background-image: url(./assets/pattern_1.jpg);
-  background-size: 100px;
+  body {
+  background-image: url(./assets/bg.jpg);
+  background-size: 200px;
   background-repeat: repeat;
   background-attachment: fixed; 
-} */
+} 
 
 header {
   /* width: 100%;
@@ -61,7 +61,7 @@ header {
 }
 
 #bottom-button {
-  margin-top: 45px;
+  margin-top: 55px;
   width: 100%;
 }
 

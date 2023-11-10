@@ -41,7 +41,7 @@ export function PostsNew() {
         </form>  */}
 
         {/* bootstrap */}
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label htmlFor="exampleInputEmail1" className="form-label">
               Title
@@ -61,7 +61,7 @@ export function PostsNew() {
             <label htmlFor="exampleInputPassword1" className="form-label">
               Image
             </label>
-            <input type="url" className="form-control" id="exampleInputPassword1" required />
+            <input type="url" className="form-control" id="" required />
           </div>
           <div className="mb-3 form-check">
             <input type="checkbox" className="form-check-input" id="exampleCheck1" required />
@@ -69,7 +69,7 @@ export function PostsNew() {
               Check this box
             </label>
           </div>
-          <button type="submit" className="btn btn-outline-info">
+          <button type="submit" className="btn btn-light btn-outline-dark">
             Submit
           </button>
         </form>

@@ -31,7 +31,7 @@ export function Modal(props) {
             </div>
             <div className="modal-body">{props.children}</div>
             <div className="modal-footer">
-              <button type="button" className="btn btn-secondary" data-bs-dismiss="modal" onClick={props.onClose}>
+              <button type="button" className="btn btn-light" data-bs-dismiss="modal" onClick={props.onClose}>
                 Close
               </button>
               {/* <button type="button" className="btn btn-primary">
