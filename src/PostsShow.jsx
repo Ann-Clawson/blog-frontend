@@ -1,13 +1,9 @@
-import axios from "axios";
-
 export function PostsShow(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
     const params = new FormData(event.target);
-    axios.patch(`http://localhost:3000/posts/${props.post.id}.json`, params).then((response) => {
-      console.log(response);
-      event.target.reset();
-    });
+    props.onUpdatePost(props.post.id, params);
+    event.target.reset();
   };
 
   return (
@@ -54,7 +50,7 @@ export function PostsShow(props) {
           <input defaultValue={props.post.image} name="image" type="url" className="form-control" id="" required />
         </div>
         <div>
-          <button type="submit" className="btn btn-light btn-outline-dark" id="save-changes">
+          <button type="submit" className="btn btn-light btn-outline-dark" data-bs-dismiss="modal" id="save-changes">
             Save Changes
           </button>
         </div>
