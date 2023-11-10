@@ -25,7 +25,7 @@ export function Header() {
               <a className="nav-link" href="#">
                 New Post
               </a>
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#all-posts">
                 All Posts
               </a>
             </div>
