@@ -37,6 +37,7 @@ export function PostsNew(props) {
             <label htmlFor="exampleInputEmail1" className="form-label">
               Title
             </label>
+            {/* name in input is PARAM, MUST be included */}
             <input
               name="title"
               type="text"
