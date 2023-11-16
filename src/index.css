@@ -48,7 +48,14 @@ header {
 } */
 
 #signup {
-  padding-top: 75px;
+  padding-top: 100px;
+  font-weight: 700;
+}
+
+
+#login {
+  padding-top: 50px;
+  font-weight: 700;
 }
 #posts-new {
   padding-top: 75px;

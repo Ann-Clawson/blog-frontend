@@ -9,9 +9,9 @@ export function PostsNew(props) {
 
   return (
     <div id="posts-new">
-      <h1 id="new-post" className="posts">
+      <h2 id="new-post" className="posts">
         Create A New Post
-      </h1>
+      </h2>
       <div>
         {/* <form onSubmit={handleSubmit}>
           <div>
