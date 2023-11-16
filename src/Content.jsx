@@ -6,6 +6,7 @@ import axios from "axios";
 import { PostsShow } from "./PostsShow";
 import { AllPosts } from "./AllPosts";
 import { Signup } from "./Signup";
+import { Login } from "./Login";
 
 export function Content() {
   //storing the data
@@ -70,6 +71,7 @@ export function Content() {
   return (
     <div className="container">
       <Signup />
+      <Login />
       <PostsNew onCreatePost={handleCreatePost} />
       <AllPosts />
       <PostsIndex posts={posts} onShowPost={handleShowPost} />
