@@ -57,6 +57,12 @@ header {
   padding-top: 50px;
   font-weight: 700;
 }
+
+.logout {
+  padding-left: 8px;
+}
+
+
 #posts-new {
   padding-top: 75px;
 }
