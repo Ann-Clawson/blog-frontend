@@ -47,6 +47,9 @@ header {
   gap: 5px;
 } */
 
+#signup {
+  padding-top: 75px;
+}
 #posts-new {
   padding-top: 75px;
 }
