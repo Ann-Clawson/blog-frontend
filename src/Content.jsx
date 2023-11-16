@@ -7,6 +7,7 @@ import { PostsShow } from "./PostsShow";
 import { AllPosts } from "./AllPosts";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
+import { LogoutLink } from "./Logout";
 
 export function Content() {
   //storing the data
@@ -72,6 +73,7 @@ export function Content() {
     <div className="container">
       <Signup />
       <Login />
+      <LogoutLink />
       <PostsNew onCreatePost={handleCreatePost} />
       <AllPosts />
       <PostsIndex posts={posts} onShowPost={handleShowPost} />
