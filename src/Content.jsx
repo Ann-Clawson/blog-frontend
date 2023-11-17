@@ -74,13 +74,17 @@ export function Content() {
     <div className="container">
       <Routes>
         <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/logout" element={<LogoutLink />} />
+        <Route path="/posts/new" element={<PostsNew />} onCreatePost={handleCreatePost} />
+        <Route path="/posts" element={<PostsIndex posts={posts} onShowPost={handleShowPost} />} />
       </Routes>
-      <Signup />
-      <Login />
-      <LogoutLink />
-      <PostsNew onCreatePost={handleCreatePost} />
-      <AllPosts />
-      <PostsIndex posts={posts} onShowPost={handleShowPost} />
+      {/* <Signup /> */}
+      {/* <Login /> */}
+      {/* <LogoutLink /> */}
+      {/* <PostsNew onCreatePost={handleCreatePost} /> */}
+      {/* <AllPosts /> */}
+      {/* <PostsIndex posts={posts} onShowPost={handleShowPost} /> */}
       <Modal show={isPostsShowVisible} onClose={handleClose}>
         <PostsShow onUpdatePost={handleUpdatePost} post={currentPost} onDestroyPost={handleDestroyPost} />
       </Modal>
