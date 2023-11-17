@@ -20,6 +20,7 @@ export function PostsIndex(props) {
     //bootstrap
     <>
       <div id="posts-index">
+        <h1>All Posts</h1>
         <div className="row row-cols-1 row-cols-md-2 g-4">
           {/* <h1> All posts</h1> */}
           {/* <div className="card-group"> */}

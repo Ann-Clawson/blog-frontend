@@ -62,6 +62,9 @@ header {
   padding-left: 8px;
 }
 
+#posts-index{
+  padding-top: 75px;
+}
 
 #posts-new {
   padding-top: 75px;
