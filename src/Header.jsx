@@ -33,6 +33,12 @@ export function Header() {
               <Link to="/signup" className="nav-link">
                 Sign Up
               </Link>
+              <Link to="/login" className="nav-link">
+                Log In
+              </Link>
+              <Link to="/logout" className="nav-link">
+                Log Out
+              </Link>
             </div>
           </div>
         </div>

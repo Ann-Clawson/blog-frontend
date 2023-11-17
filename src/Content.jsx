@@ -4,7 +4,6 @@ import { Modal } from "./Modal";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { PostsShow } from "./PostsShow";
-import { AllPosts } from "./AllPosts";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
 import { LogoutLink } from "./Logout";
