@@ -23,7 +23,7 @@ export function Signup() {
 
   return (
     <div id="signup">
-      <h1>Signup</h1>
+      <h1>Sign Up</h1>
       <ul>
         {errors.map((error) => (
           <li key={error}>{error}</li>
@@ -43,7 +43,7 @@ export function Signup() {
           Password confirmation: <input name="password_confirmation" type="password" />
         </div>
         <button className="btn btn-light btn-outline-dark" type="submit">
-          Signup
+          Sign Up!
         </button>
       </form>
     </div>
