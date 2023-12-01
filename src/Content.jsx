@@ -78,15 +78,15 @@ export function Content() {
         <Route path="/posts/new" element={<PostsNew onCreatePost={handleCreatePost} />} />
         <Route path="/posts" element={<PostsIndex posts={posts} onShowPost={handleShowPost} />} />
       </Routes>
+      <Modal show={isPostsShowVisible} onClose={handleClose}>
+        <PostsShow onUpdatePost={handleUpdatePost} post={currentPost} onDestroyPost={handleDestroyPost} />
+      </Modal>
       {/* <Signup /> */}
       {/* <Login /> */}
       {/* <LogoutLink /> */}
       {/* <PostsNew onCreatePost={handleCreatePost} /> */}
       {/* <AllPosts /> */}
       {/* <PostsIndex posts={posts} onShowPost={handleShowPost} /> */}
-      <Modal show={isPostsShowVisible} onClose={handleClose}>
-        <PostsShow onUpdatePost={handleUpdatePost} post={currentPost} onDestroyPost={handleDestroyPost} />
-      </Modal>
     </div>
   );
 }
