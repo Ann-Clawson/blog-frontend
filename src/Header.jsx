@@ -1,6 +1,28 @@
 import { Link } from "react-router-dom";
 
 export function Header() {
+  let authenticationLinks;
+  if (localStorage.jwt === undefined) {
+    authenticationLinks = (
+      <>
+        <Link to="/signup" className="nav-link">
+          Sign Up
+        </Link>
+        <Link to="/login" className="nav-link">
+          Log In
+        </Link>
+      </>
+    );
+  } else {
+    authenticationLinks = (
+      <>
+        <Link to="/logout" className="nav-link">
+          Log Out
+        </Link>
+      </>
+    );
+  }
+
   return (
     <header>
       <nav className="navbar navbar-expand-lg bg-light">
@@ -30,15 +52,9 @@ export function Header() {
               <Link className="nav-link" to="/posts">
                 All Posts
               </Link>
-              <Link to="/signup" className="nav-link">
-                Sign Up
-              </Link>
-              <Link to="/login" className="nav-link">
-                Log In
-              </Link>
-              <Link to="/logout" className="nav-link">
-                Log Out
-              </Link>
+              {/* sign up/log in */}
+              {authenticationLinks}
+              {/* log out */}
             </div>
           </div>
         </div>

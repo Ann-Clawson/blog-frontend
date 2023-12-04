@@ -58,8 +58,10 @@ header {
   font-weight: 700;
 }
 
-.logout {
+#logout {
   padding-left: 8px;
+  padding-top: 175px;
+  z-index: 100;
 }
 
 #posts-index{

@@ -1,7 +1,10 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react";
 
 export function PostsIndex(props) {
   // console.log(props);
+  const [searchFilter, setSearchFilter] = useState("");
+
   return (
     // <div id="posts-index">
     //   <h1> All posts</h1>
@@ -21,29 +24,43 @@ export function PostsIndex(props) {
     <>
       <div id="posts-index">
         <h1>All Posts</h1>
+        <br />
+        <input
+          className="mb-3"
+          type="text"
+          value={searchFilter}
+          onChange={(event) => setSearchFilter(event.target.value)}
+        />
+        <button className="btn btn-light btn-outline-dark" type="submit">
+          Search
+        </button>
+        <br />
+        <br />
         <div className="row row-cols-1 row-cols-md-2 g-4">
           {/* <h1> All posts</h1> */}
           {/* <div className="card-group"> */}
-          {props.posts.map((post) => (
-            <div className="col" key={post.id}>
-              <div className="card">
-                <img src={post.image} className="card-img-top" alt="..." />
-                <div className="card-body">
-                  <h5 className="card-title">{post.title}</h5>
-                  <p className="card-text">{post.body}</p>
-                  <button
-                    type="button"
-                    className="btn btn-light btn-outline-dark"
-                    data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop"
-                    onClick={() => props.onShowPost(post)}
-                  >
-                    Edit Post
-                  </button>
+          {props.posts
+            .filter((post) => post.title.toLowerCase().includes(searchFilter.toLowerCase()))
+            .map((post) => (
+              <div className="col" key={post.id}>
+                <div className="card">
+                  <img src={post.image} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title">{post.title}</h5>
+                    <p className="card-text">{post.body}</p>
+                    <button
+                      type="button"
+                      className="btn btn-light btn-outline-dark"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                      onClick={() => props.onShowPost(post)}
+                    >
+                      Edit Post
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
       </div>
       <div className="col-4 mx-auto">

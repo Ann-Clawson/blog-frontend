@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export function LogoutLink() {
+export function Logout() {
   const handleClick = (event) => {
     event.preventDefault();
     delete axios.defaults.headers.common["Authorization"];
@@ -9,8 +9,8 @@ export function LogoutLink() {
   };
 
   return (
-    <a href="#" onClick={handleClick} className="logout">
-      Logout
-    </a>
+    <h1 onClick={handleClick} id="logout">
+      Log Out
+    </h1>
   );
 }

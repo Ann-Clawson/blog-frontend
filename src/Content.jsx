@@ -6,7 +6,7 @@ import axios from "axios";
 import { PostsShow } from "./PostsShow";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
-import { LogoutLink } from "./Logout";
+import { Logout } from "./Logout";
 import { Routes, Route } from "react-router-dom";
 
 export function Content() {
@@ -58,6 +58,12 @@ export function Content() {
       setCurrentPost(response.data);
       setIsPostsShowVisible(false);
     });
+
+    // const handleClick = (event) => {
+    //   event.preventDefault();
+    //   delete axios.defaults.headers.common["Authorization"];
+    //   localStorage.removeItem("jwt");
+    //   window.location.href = "/";
   };
 
   const handleDestroyPost = (post) => {
@@ -74,7 +80,7 @@ export function Content() {
       <Routes>
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/logout" element={<LogoutLink />} />
+        <Route path="/logout" element={<Logout />} />
         <Route path="/posts/new" element={<PostsNew onCreatePost={handleCreatePost} />} />
         <Route path="/posts" element={<PostsIndex posts={posts} onShowPost={handleShowPost} />} />
       </Routes>
