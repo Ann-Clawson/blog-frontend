@@ -30,7 +30,15 @@ export function PostsIndex(props) {
           type="text"
           value={searchFilter}
           onChange={(event) => setSearchFilter(event.target.value)}
+          list="titles"
         />
+        <datalist id="titles">
+          {searchFilter === "" ? (
+            <option></option>
+          ) : (
+            props.posts.map((post) => <option key={post.id}>{post.title}</option>)
+          )}
+        </datalist>
         <button className="btn btn-light btn-outline-dark" type="submit">
           Search
         </button>
