@@ -33,6 +33,7 @@ export function Signup() {
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           Name: <input name="name" type="text" value={name} onChange={(event) => setName(event.target.value)} />
+          <small> {20 - name.length} characters remaining</small>
         </div>
         <div className="mb-3">
           Email: <input name="email" type="email" />
