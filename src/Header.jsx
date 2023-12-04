@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Logout } from "./Logout";
 
 export function Header() {
   let authenticationLinks;
@@ -16,9 +17,10 @@ export function Header() {
   } else {
     authenticationLinks = (
       <>
-        <Link to="/logout" className="nav-link">
+        <Logout />
+        {/* <Link to="/logout" className="nav-link">
           Log Out
-        </Link>
+        </Link> */}
       </>
     );
   }

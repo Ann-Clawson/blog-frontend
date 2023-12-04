@@ -9,8 +9,8 @@ export function Logout() {
   };
 
   return (
-    <h1 onClick={handleClick} id="logout">
+    <a href="#" onClick={handleClick} id="logout">
       Log Out
-    </h1>
+    </a>
   );
 }
