@@ -29,7 +29,7 @@ export function Header() {
     <header>
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand" href="/home">
             It&apos;s a Blog!
           </a>
           <button
@@ -45,7 +45,7 @@ export function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <Link to="/" className="nav-link active" aria-current="page">
+              <Link to="/home" className="nav-link active" aria-current="page">
                 Home
               </Link>
               <Link className="nav-link" to="/posts/new">

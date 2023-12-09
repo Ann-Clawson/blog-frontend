@@ -44,7 +44,7 @@ export function PostsIndex(props) {
         </button>
         <br />
         <br />
-        <div className="row row-cols-1 row-cols-md-2 g-4">
+        <div className="row row-cols-1 row-cols-md-2 g-5">
           {/* <h1> All posts</h1> */}
           {/* <div className="card-group"> */}
           {props.posts
