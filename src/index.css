@@ -74,15 +74,14 @@ header {
   padding-top: 50px;
 }
 
-#footer.container{
-  width: 100%;
-}
-
 footer{
   text-align: center;
   width: 100% !important;
 }
 
+#footer {
+  margin-bottom: 50px !important;
+}
 
 #bottom-button {
   margin-top: 55px;

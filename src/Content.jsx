@@ -77,7 +77,7 @@ export function Content() {
   useEffect(handleIndexPosts, []);
 
   return (
-    <div className="container">
+    <div className="container d-flex flex-column min-vh-100">
       <Routes>
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
