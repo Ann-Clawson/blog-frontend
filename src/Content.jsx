@@ -8,6 +8,7 @@ import { Signup } from "./Signup";
 import { Login } from "./Login";
 import { Logout } from "./Logout";
 import { Routes, Route } from "react-router-dom";
+import { Home } from "./Home";
 
 export function Content() {
   //storing the data
@@ -87,6 +88,7 @@ export function Content() {
       <Modal show={isPostsShowVisible} onClose={handleClose}>
         <PostsShow onUpdatePost={handleUpdatePost} post={currentPost} onDestroyPost={handleDestroyPost} />
       </Modal>
+      <Home />
       {/* <Signup /> */}
       {/* <Login /> */}
       {/* <LogoutLink /> */}

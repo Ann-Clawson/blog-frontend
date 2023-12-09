@@ -63,11 +63,11 @@ header {
 } */
 
 #posts-index{
-  padding-top: 75px;
+  padding-top: 100px;
 }
 
 #posts-new {
-  padding-top: 75px;
+  padding-top: 100px;
 }
 
 #all-posts {
@@ -95,4 +95,9 @@ body {
 
 #save-changes{
   margin: 25px 0 !important;
+}
+
+#home {
+  margin-top: 100px;
+  text-align: center;
 }

@@ -30,7 +30,7 @@ export function Header() {
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            It&apos;s a Blog
+            It&apos;s a Blog!
           </a>
           <button
             className="navbar-toggler"
