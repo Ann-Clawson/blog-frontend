@@ -18,9 +18,6 @@ export function Header() {
     authenticationLinks = (
       <>
         <Logout />
-        {/* <Link to="/logout" className="nav-link">
-          Log Out
-        </Link> */}
       </>
     );
   }
