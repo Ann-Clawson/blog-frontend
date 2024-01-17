@@ -7,7 +7,7 @@ import { PostsShow } from "./PostsShow";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
 import { Logout } from "./Logout";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "./Home";
 
 export function Content() {
@@ -68,6 +68,7 @@ export function Content() {
   };
 
   const handleDestroyPost = (post) => {
+    // eslint-disable-next-line no-unused-vars
     axios.delete(`http://localhost:3000/posts/${post.id}.json`).then((response) => {
       setPosts(posts.filter((p) => p.id !== post.id));
       handleClose();
@@ -79,6 +80,7 @@ export function Content() {
   return (
     <div className="container d-flex flex-column min-vh-100">
       <Routes>
+        <Route path="/" element={<Navigate replace to="/home" />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Logout />} />
