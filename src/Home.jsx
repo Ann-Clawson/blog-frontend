@@ -8,6 +8,7 @@ export function Home(props) {
           <i>It&apos;s a Blog!</i>
           <br /> where every day it&apos;s a blog.
         </h1>
+        <br />
         {/* <h2>{props.posts[0].title}</h2> */}
       </div>
     </>
