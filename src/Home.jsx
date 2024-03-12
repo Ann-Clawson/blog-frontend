@@ -1,6 +1,5 @@
 export function Home(props) {
-  let post = props.posts[0];
-  console.log(post);
+  console.log(props.posts);
   return (
     <>
       <div className="container" id="home">
@@ -9,9 +8,7 @@ export function Home(props) {
           <i>It&apos;s a Blog!</i>
           <br /> where every day it&apos;s a blog.
         </h1>
-        <h2>{post.title}</h2>
-        {/* <p>{props.posts.body}</p>
-        <img src={props.posts.image} alt={props.posts.title} /> */}
+        {/* <h2>{props.posts[0].title}</h2> */}
       </div>
     </>
   );

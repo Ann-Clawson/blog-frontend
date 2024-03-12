@@ -11,18 +11,6 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "./Home";
 
 export function Content() {
-  //storing the data
-  const [posts, setPosts] = useState([]);
-
-  //making the data call
-  const handleIndexPosts = () => {
-    axios.get("http://localhost:3000/posts.json").then((response) => {
-      // console.log(response.data);
-      let data = response.data;
-      setPosts(data.reverse());
-    });
-  };
-
   //hiding the modal on load
   const [isPostsShowVisible, setIsPostsShowVisible] = useState(false);
 
@@ -72,6 +60,18 @@ export function Content() {
     axios.delete(`http://localhost:3000/posts/${post.id}.json`).then((response) => {
       setPosts(posts.filter((p) => p.id !== post.id));
       handleClose();
+    });
+  };
+
+  //storing the data
+  const [posts, setPosts] = useState([]);
+
+  //making the data call
+  const handleIndexPosts = () => {
+    axios.get("http://localhost:3000/posts.json").then((response) => {
+      // console.log(response.data);
+      let data = response.data;
+      setPosts(data.reverse());
     });
   };
 
