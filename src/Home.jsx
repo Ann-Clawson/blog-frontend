@@ -4,7 +4,7 @@ export function Home() {
       <div className="container" id="home">
         <h1>
           Hello, and welcome to <br />
-          It&apos;s a Blog!
+          <i>It&apos;s a Blog!</i>
           <br /> where every day it&apos;s a blog.
         </h1>
       </div>
