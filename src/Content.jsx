@@ -86,7 +86,7 @@ export function Content() {
         <Route path="/logout" element={<Logout />} />
         <Route path="/posts/new" element={<PostsNew onCreatePost={handleCreatePost} />} />
         <Route path="/posts" element={<PostsIndex posts={posts} onShowPost={handleShowPost} />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/home" element={<Home posts={posts} />} />
       </Routes>
       <Modal show={isPostsShowVisible} onClose={handleClose}>
         <PostsShow onUpdatePost={handleUpdatePost} post={currentPost} onDestroyPost={handleDestroyPost} />

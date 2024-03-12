@@ -47,6 +47,10 @@ header {
   gap: 5px;
 } */
 
+h1 i {
+  text-shadow: 1px 1px 2px pink;
+}
+
 #signup {
   padding-top: 100px;
   font-weight: 700;
