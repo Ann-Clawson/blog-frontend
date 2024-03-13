@@ -11,6 +11,20 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "./Home";
 
 export function Content() {
+  //storing the data
+  const [posts, setPosts] = useState([]);
+
+  //making the data call
+  const handleIndexPosts = () => {
+    axios.get("http://localhost:3000/posts.json").then((response) => {
+      // console.log(response.data);
+      let data = response.data;
+      setPosts(data.reverse());
+    });
+  };
+
+  useEffect(handleIndexPosts, []);
+
   //hiding the modal on load
   const [isPostsShowVisible, setIsPostsShowVisible] = useState(false);
 
@@ -62,20 +76,6 @@ export function Content() {
       handleClose();
     });
   };
-
-  //storing the data
-  const [posts, setPosts] = useState([]);
-
-  //making the data call
-  const handleIndexPosts = () => {
-    axios.get("http://localhost:3000/posts.json").then((response) => {
-      // console.log(response.data);
-      let data = response.data;
-      setPosts(data.reverse());
-    });
-  };
-
-  useEffect(handleIndexPosts, []);
 
   return (
     <div className="container d-flex flex-column min-vh-100">
