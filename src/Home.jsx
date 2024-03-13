@@ -1,4 +1,14 @@
+import { useEffect } from "react";
+
 export function Home(props) {
+  let info;
+
+  useEffect(() => {
+    async function getData(props) {
+      info = await props.posts;
+    }
+  }, []);
+
   console.log(props.posts);
   return (
     <>
@@ -9,7 +19,7 @@ export function Home(props) {
           <br /> where every day it&apos;s a blog.
         </h1>
         <br />
-        {/* <h2>{props.posts[0].title}</h2> */}
+        {/* <h2>{info[0].title}</h2> */}
       </div>
     </>
   );
