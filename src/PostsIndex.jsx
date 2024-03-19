@@ -23,7 +23,7 @@ export function PostsIndex(props) {
     //bootstrap
     <>
       <div id="posts-index">
-        <h1>Posted Posts</h1>
+        <h1>All Posts</h1>
         <br />
         <input
           className="mb-3"
