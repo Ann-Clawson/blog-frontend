@@ -1,10 +1,9 @@
 import { useEffect } from "react";
 
 export function Home(props) {
-  let info;
-
   useEffect(() => {
     async function getData(props) {
+      let info;
       info = await props.posts;
     }
   }, []);
