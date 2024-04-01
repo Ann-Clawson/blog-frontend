@@ -48,9 +48,9 @@ export function Header() {
               <Link className="nav-link" to="/posts/new">
                 New Post
               </Link>
-              <Link className="nav-link" to="/posts">
-                All Posts
-              </Link>
+              {/* <Link className="nav-link" to="/posts"> */}
+              {/* All Posts
+              </Link> */}
               {/* sign up/log in */}
               {authenticationLinks}
               {/* log out */}
