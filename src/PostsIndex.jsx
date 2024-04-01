@@ -2,7 +2,6 @@
 import { useState } from "react";
 
 export function PostsIndex(props) {
-  // console.log(props);
   const [searchFilter, setSearchFilter] = useState("");
 
   return (
@@ -50,8 +49,6 @@ export function PostsIndex(props) {
         <br />
         <br />
         <div className="row row-cols-1 row-cols-md-2 g-5">
-          {/* <h1> All posts</h1> */}
-          {/* <div className="card-group"> */}
           {props.posts
             .filter((post) => post.title.toLowerCase().includes(searchFilter.toLowerCase()))
             .map((post) => (

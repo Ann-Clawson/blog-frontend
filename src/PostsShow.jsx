@@ -12,8 +12,6 @@ export function PostsShow(props) {
 
   return (
     <div id="posts-show">
-      {/* <h2>{props.post.title}</h2>
-      <p>{props.post.body}</p> */}
       <h2>Edit Post</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
@@ -30,9 +28,6 @@ export function PostsShow(props) {
             aria-describedby="emailHelp"
             required
           />
-          {/* <div id="emailHelp" className="form-text">
-              We&apos;ll never share your email with anyone else.
-            </div> */}
         </div>
         <div className="mb-3">
           <label htmlFor="exampleInputPassword1" className="form-label">
