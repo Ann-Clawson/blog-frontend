@@ -8,7 +8,6 @@ import { Signup } from "./Signup";
 import { Login } from "./Login";
 import { Logout } from "./Logout";
 import { Routes, Route, Navigate } from "react-router-dom";
-import { Home } from "./Home";
 
 export function Content() {
   //storing the data
@@ -17,7 +16,6 @@ export function Content() {
   //making the data call
   const handleIndexPosts = () => {
     axios.get("http://localhost:3000/posts.json").then((response) => {
-      // console.log(response.data);
       let data = response.data;
       setPosts(data.reverse());
     });

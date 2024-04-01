@@ -79,7 +79,7 @@ export function PostsIndex(props) {
       <div className="col-4 mx-auto">
         <a href="#">
           <button id="bottom-button" type="button" className="btn btn-light btn-outline-dark">
-            Back To Tha Top
+            Back To Top
           </button>
         </a>
       </div>
