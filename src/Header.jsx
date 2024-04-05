@@ -17,7 +17,9 @@ export function Header() {
   } else {
     authenticationLinks = (
       <>
-        <Logout />
+        <a className="nav-link">
+          <Logout />
+        </a>
       </>
     );
   }
