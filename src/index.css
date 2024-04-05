@@ -51,27 +51,19 @@ h1 i {
   text-shadow: 1px 1px 2px pink;
 }
 
-#signup {
+#signup{
   padding-top: 100px;
   font-weight: 700;
 }
 
-
-#login {
-  padding-top: 50px;
-  font-weight: 700;
-}
-
-/* #logout {
-
-} */
 
 #posts-index{
   padding-top: 100px;
 }
 
-#posts-new {
+#posts-new, #login {
   padding-top: 100px;
+  font-weight: 700;
 }
 
 #all-posts {
@@ -94,10 +86,6 @@ footer{
 
 body {
   font-family: 'Nunito Sans', sans-serif !important;
-}
-
-#new-post {
-  font-weight: 700;
 }
 
 #save-changes{

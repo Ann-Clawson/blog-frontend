@@ -55,7 +55,6 @@ export function PostsShow(props) {
         </div>
       </form>
       <button type="submit" className="btn btn-light btn-outline-dark" data-bs-dismiss="modal" onClick={handleClick}>
-        {" "}
         Delete Post
       </button>
     </div>
