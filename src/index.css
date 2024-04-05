@@ -6,12 +6,6 @@
   height: 300px;
   object-fit: cover;
 }
-/*
-html {
-  scroll-behavior: smooth;
-  text-align: center;
-  font-family: 'Permanent Marker', cursive;
-}*/
 
   body {
   background-image: url(./assets/bg.jpg);
@@ -21,24 +15,10 @@ html {
 } 
 
 header {
-  /* width: 100%;
-  margin: 0;
-  padding: 25px 0 25px 10px;
-  text-align: left;  */
-  /* background-color: rgb(255, 255, 255, 0.7); */
   position: fixed;
   top: 0;
   z-index: 10;
   width: 100%;
-  /* background: linear-gradient(rgb(243, 240, 239), rgb(243, 240, 239, 0.25)); */
-}
-
-/* header a {
-  padding-right: 20px;
-}
-
-#new-post {
-  padding-top: 75px;
 }
 
 .cards {
@@ -59,6 +39,7 @@ h1 i {
 
 #posts-index{
   padding-top: 100px;
+  text-align: center;
 }
 
 #posts-new, #login {
@@ -77,6 +58,7 @@ footer{
 
 #footer {
   margin-bottom: 50px !important;
+  bottom: 0%;
 }
 
 #bottom-button {

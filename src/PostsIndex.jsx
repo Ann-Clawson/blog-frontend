@@ -22,7 +22,7 @@ export function PostsIndex(props) {
     //bootstrap
     <>
       <div id="posts-index">
-        <h1>
+        <h1 className="welcome-message">
           Hello, and welcome to <br />
           <i>It&apos;s a Blog!</i>
           <br /> where every day it&apos;s a blog.
