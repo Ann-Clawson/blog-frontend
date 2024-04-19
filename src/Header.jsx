@@ -28,8 +28,8 @@ export function Header() {
     <header>
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/home">
-            It&apos;s a Blog!
+          <a className="navbar-brand banner-blog" href="/home">
+            <i>It&apos;s a Blog!</i>
           </a>
           <button
             className="navbar-toggler"
