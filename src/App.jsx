@@ -20,9 +20,6 @@ function App() {
     <div>
       <BrowserRouter>
         <Header />
-        {/* <div onClick={() => setFlashMessage(null)}>
-          <h1>{flashMessage}</h1>
-        </div> */}
         <Content />
         <Footer />
       </BrowserRouter>
