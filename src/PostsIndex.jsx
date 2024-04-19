@@ -24,7 +24,7 @@ export function PostsIndex(props) {
       <div id="posts-index">
         <h1 className="welcome-message">
           Hello, and welcome to <br />
-          <i>It&apos;s a Blog!</i>
+          <i id="banner-blog">It&apos;s a Blog!</i>
           <br /> where every day it&apos;s a blog.
         </h1>
         <h1>All Posts</h1>
