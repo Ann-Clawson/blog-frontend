@@ -7,11 +7,12 @@
   object-fit: cover;
 }
 
-  body {
+body {
   background-image: url(./assets/bg.jpg);
   background-size: 200px;
   background-repeat: repeat;
   background-attachment: fixed; 
+  font-family: 'Nunito Sans', sans-serif !important;
 } 
 
 header {
@@ -38,6 +39,10 @@ header {
   text-align: center;
 }
 
+#all-posts {
+  padding-top: 50px;
+}
+
 .banner-blog {
   text-shadow: 1px 1px 2px pink;
 }
@@ -47,27 +52,9 @@ header {
   font-weight: 700;
 }
 
-#all-posts {
-  padding-top: 50px;
-}
-
-footer{
-  text-align: center;
-  width: 100% !important;
-}
-
-#footer {
-  margin-bottom: 50px !important;
-  bottom: 0%;
-}
-
 #bottom-button {
   margin-top: 55px;
   width: 100%;
-}
-
-body {
-  font-family: 'Nunito Sans', sans-serif !important;
 }
 
 #save-changes{
@@ -86,4 +73,14 @@ body {
 
 .nav-link a:hover {
   color: rgba(52, 51, 51);
+}
+
+footer{
+  text-align: center;
+  width: 100% !important;
+}
+
+#footer {
+  margin-bottom: 50px !important;
+  bottom: 0%;
 }
