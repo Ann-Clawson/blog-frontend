@@ -92,7 +92,7 @@ export function PostsIndex(props) {
           {displayedPosts.map((post) => (
             <div className="col" key={post.id}>
               <div className="card">
-                <img src={post.image} className="card-img-top" alt="..." />
+                <img src={post.image} className="card-img-top" alt={post.title} />
                 <div className="card-body">
                   <h5 className="card-title">{post.title}</h5>
                   <p className="card-text">{post.body}</p>
