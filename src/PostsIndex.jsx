@@ -3,7 +3,11 @@ import { useState } from "react";
 
 export function PostsIndex(props) {
   const [searchFilter, setSearchFilter] = useState("");
+  const [displayedPosts, setDisplayedPosts] = useState(props.posts);
 
+  const handleSearch = () => {
+    setDisplayedPosts(props.posts.filter((post) => post.title.toLowerCase().includes(searchFilter.toLowerCase())));
+  };
   return (
     // <div id="posts-index">
     //   <h1> All posts</h1>
@@ -43,7 +47,7 @@ export function PostsIndex(props) {
             props.posts.map((post) => <option key={post.id}>{post.title}</option>)
           )}
         </datalist>
-        <button className="btn btn-light btn-outline-dark" type="submit">
+        <button className="btn btn-light btn-outline-dark" type="submit" onClick={handleSearch}>
           Search
         </button>
         <br />
