@@ -7,6 +7,7 @@ export function PostsIndex(props) {
 
   const handleSearch = () => {
     setDisplayedPosts(props.posts.filter((post) => post.title.toLowerCase().includes(searchFilter.toLowerCase())));
+    setSearchFilter("");
   };
 
   useEffect(() => {
