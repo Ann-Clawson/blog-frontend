@@ -4,10 +4,12 @@ import { useState, useEffect } from "react";
 export function PostsIndex(props) {
   const [searchFilter, setSearchFilter] = useState("");
   const [displayedPosts, setDisplayedPosts] = useState(props.posts);
+  const [displayedSearchMessage, setDisplayedSearchMessage] = useState("");
 
   const handleSearch = () => {
     setDisplayedPosts(props.posts.filter((post) => post.title.toLowerCase().includes(searchFilter.toLowerCase())));
     setSearchFilter("");
+    setDisplayedSearchMessage(searchFilter);
   };
 
   useEffect(() => {
@@ -55,6 +57,13 @@ export function PostsIndex(props) {
         <button className="btn btn-light btn-outline-dark" type="submit" onClick={handleSearch}>
           Search
         </button>
+        <br />
+        <br />
+        {displayedSearchMessage === "" ? (
+          <div />
+        ) : (
+          <h4>Showing search results for &quot;{displayedSearchMessage}&quot;</h4>
+        )}
         <br />
         <br />
         <div className="row row-cols-1 row-cols-md-2 g-5">
