@@ -53,7 +53,7 @@ export function PostsIndex(props) {
         <br />
         <br />
         <div className="row row-cols-1 row-cols-md-2 g-5">
-          {props.posts
+          {/* {props.posts
             .filter((post) => post.title.toLowerCase().includes(searchFilter.toLowerCase()))
             .map((post) => (
               <div className="col" key={post.id}>
@@ -74,7 +74,7 @@ export function PostsIndex(props) {
                   </div>
                 </div>
               </div>
-            ))}
+            ))} */}
         </div>
       </div>
       <div className="col-4 mx-auto">
