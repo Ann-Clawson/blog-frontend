@@ -54,7 +54,7 @@ export function PostsIndex(props) {
             props.posts.map((post) => <option key={post.id}>{post.title}</option>)
           )}
         </datalist>
-        <button className="btn btn-light btn-outline-dark" type="submit" onClick={handleSearch}>
+        <button className="btn btn-light btn-outline-dark search-btn" type="submit" onClick={handleSearch}>
           Search
         </button>
         <br />
