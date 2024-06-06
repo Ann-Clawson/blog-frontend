@@ -53,10 +53,16 @@ header {
   font-weight: 700;
 }
 
-.search-btn {
-margin-left: 20px !important;
+.blog-heading{
+  padding-top: 25px;
 }
 
+.input-bar {
+  width: 30%;
+}
+.search-btn {
+  margin-left: 20px !important;
+}
 
 #bottom-button {
   margin-top: 55px;

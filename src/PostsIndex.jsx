@@ -38,14 +38,15 @@ export function PostsIndex(props) {
           <i className="banner-blog">It&apos;s a Blog!</i>
           <br /> where every day it&apos;s a blog.
         </h1>
-        <h1>All Posts</h1>
+        <h2 className="blog-heading">Read, Search, Blog</h2>
         <br />
         <input
-          className="mb-3"
+          className="mb-3 input-bar"
           type="text"
           value={searchFilter}
           onChange={(event) => setSearchFilter(event.target.value)}
           list="titles"
+          placeholder="What's in a name?"
         />
         <datalist id="titles">
           {searchFilter === "" ? (
