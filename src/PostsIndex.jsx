@@ -38,7 +38,7 @@ export function PostsIndex(props) {
           <i className="banner-blog">It&apos;s a Blog!</i>
           <br /> where every day it&apos;s a blog.
         </h1>
-        <h2 className="blog-heading">Read, Search, Blog</h2>
+        {/* <h2 className="blog-heading">Read, Search, Blog</h2> */}
         <br />
         <input
           className="mb-3 input-bar"
@@ -56,7 +56,7 @@ export function PostsIndex(props) {
           )}
         </datalist>
         <button className="btn btn-light btn-outline-dark search-btn" type="submit" onClick={handleSearch}>
-          Search
+          Search All Posts
         </button>
         <br />
         <br />
